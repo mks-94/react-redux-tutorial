@@ -1,6 +1,5 @@
-import { createStore } from "redux";
-import rootReducer from "reducers/index";
+import store from "../js/store/index";
+import { addArticle } from "../js/actions/index";
 
-const store = createStore(rootReducer);
-
-export default store;
+window.store = store;
+window.addArticle = addArticle;
