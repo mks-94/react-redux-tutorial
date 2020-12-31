@@ -12,6 +12,7 @@ const List = ({ articles }) => {
 };
 
 const mapStateToProps = (state) => {
+  console.log(state, "State from list");
   return { articles: state.articles };
 };
 

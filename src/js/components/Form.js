@@ -5,7 +5,7 @@ import { addArticle } from "../actions/index";
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    state = {
+    this.state = {
       title: "",
     };
   }
@@ -41,6 +41,7 @@ class Form extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => {
+  console.log(dispatch, "Is dispatch here!");
   return {
     addArticle: (article) => dispatch(addArticle(article)),
   };
